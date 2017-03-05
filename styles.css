@@ -1,8 +1,9 @@
-/*Color Palette
+/********Color Palette *******
+
 letters: #666a86
 whites: #f1f7ee
 black: #000807
-details: #809bce (blue) #b37ba4 (red)
+details: #809bce (blue) #b37ba4 (redish)
 */
 
 /* Global Layout Set-up */
@@ -18,12 +19,6 @@ body {
   color: #666a86;
   background: #f1f7ee;
 }
-
-/* Temp styles */
-
-/*p {
-  color: red;
-}*/
 
 /* Link Styles */
 
@@ -77,17 +72,18 @@ header {
 }
 header {
   line-height: 1.5;
+  min-height: 15em;
 }
 header .profile-image {
   margin-top: 50px;
   width: 150px;
   height: 150px;
   border-radius: 50%;
-  border: 3px solid #f1f7ee;
-  transition: all .5s;
+  border: 3px dashed #f1f7ee;
+  transition: all .5s ease-out;
 }
 header .profile-image:hover {
-  transform: scale(1.4) rotate(360deg) translateY(-16px);
+  transform: scale(1.2) rotate(360deg) translateY(-16px);
 }
 .tag {
   background-color: #efefef;
@@ -116,6 +112,16 @@ header .profile-image:hover {
   border-color: #809bce;
 }
 
+ul.hobbies {
+    padding: 0;
+}
+
+.hobbies li{
+  list-style: none;
+  padding: 3px;
+  color: #b37ba4;
+}
+
 ul.skills {
   padding: 0;
   text-align: center;
@@ -140,6 +146,23 @@ ul.skills {
 
 .buttons:hover {
   color: #666a86;
+}
+
+.gallery {
+  max-width: 500px;
+  height: auto;
+  display: flex;
+
+}
+
+.dog-image {
+  margin: 30px;
+  padding: 0;
+  border: 5px solid #809bce;
+  border-radius: 45%;
+  max-width: 100%;
+  height: auto;
+  align-self: center;
 }
 
 footer {
@@ -202,7 +225,7 @@ a.social:hover {
   }
 
   header {
-    min-height: 470px;
+    min-height: 500px;
   }
 
   .nav {

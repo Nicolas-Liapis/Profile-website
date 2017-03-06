@@ -31,6 +31,11 @@ a:hover {
   color: #81a4cd;
 }
 
+.index {
+  z-index: 999;
+}
+
+
 /* Section Styles */
 
 .main-nav {
@@ -40,6 +45,7 @@ a:hover {
   padding: 10px;
   position: fixed;
   text-align: center;
+  z-index: 999;
 }
 .nav {
   display: flex;
